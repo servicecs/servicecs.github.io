@@ -1,201 +1,212 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS Service</title>
-  <!-- Font Awesome für Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-kdW4A6TtN+2xX0qgQDX2OaZXM0lU/4Ck7+dGqv2GJ6xD/3KpDk3QqVg8nUBvR3nZlF+1rH0ezRtU5g6PoQILjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f2f5;
-      color: #333;
-      scroll-behavior: smooth;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CS Service</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-kdW4A6TtN+2xX0qgQDX2OaZXM0lU/4Ck7+dGqv2GJ6xD/3KpDk3QqVg8nUBvR3nZlF+1rH0ezRtU5g6PoQILjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    /* Header zentriert */
-    header {
-      background: linear-gradient(90deg, #0073e6, #00aaff);
-      color: white;
-      padding: 20px 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+  scroll-behavior: smooth;
+}
 
-    .logo-title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+/* Header zentriert */
+header {
+  background: linear-gradient(90deg, #0073e6, #00aaff);
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+}
 
-    .logo-title img {
-      height: 60px;
-    }
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 
-    .logo-title h1 {
-      margin: 0;
-      font-size: 2em;
-    }
+.logo-title img {
+  height: 60px;
+}
 
-    nav {
-      margin-top: 15px;
-    }
+.logo-title h1 {
+  margin: 0;
+  font-size: 2em;
+}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 5px 0;
-      display: inline-block;
-      transition: color 0.3s ease, transform 0.2s ease;
-    }
+nav {
+  margin-top: 15px;
+}
 
-    nav a:hover {
-      color: #ffcc00;
-      transform: scale(1.05);
-    }
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 0;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.2s ease, text-shadow 0.3s ease;
+}
 
-    /* Sections with gradient backgrounds */
-    section {
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: 30px auto;
-      border-radius: 10px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+nav a:hover {
+  color: #ffcc00;
+  transform: scale(1.05);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
 
-    #pc-service {
-      background: linear-gradient(135deg, #e6f0ff, #cce0ff);
-    }
+/* Sections */
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    #ps-service {
-      background: linear-gradient(135deg, #fff0e6, #ffd9cc);
-    }
+#pc-service {
+  background: linear-gradient(135deg, #e6f0ff, #cce0ff);
+}
 
-    #webdesign {
-      background: linear-gradient(135deg, #e6ffe6, #ccffcc);
-    }
+#ps-service {
+  background: linear-gradient(135deg, #fff0e6, #ffd9cc);
+}
 
-    h2 {
-      color: #0073e6;
-      margin-bottom: 20px;
-    }
+#webdesign {
+  background: linear-gradient(135deg, #e6ffe6, #ccffcc);
+}
 
-    .service-item {
-      background-color: rgba(255,255,255,0.8);
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
-    }
+h2 {
+  color: #0073e6;
+  margin-bottom: 20px;
+}
 
-    .service-item:hover {
-      transform: scale(1.03);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-      background: rgba(255,255,255,1);
-    }
+.service-item {
+  background-color: rgba(255,255,255,0.85);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
 
-    .service-item i {
-      margin-right: 10px;
-      color: #0073e6;
-      font-size: 1.3em;
-      width: 30px;
-      text-align: center;
-      transition: transform 0.3s ease, color 0.3s ease;
-    }
+.service-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  background: rgba(255,255,255,1);
+}
 
-    .service-item:hover i {
-      color: #005bb5;
-      transform: rotate(15deg);
-    }
+.service-item i {
+  margin-right: 10px;
+  color: #0073e6;
+  font-size: 1.3em;
+  width: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
 
-    .price {
-      color: #e60000;
-      font-weight: bold;
-      margin-left: auto;
-    }
+.service-item:hover i {
+  color: #005bb5;
+  transform: rotate(15deg);
+}
 
-    /* Kontakt + Standort */
-    #contact-location {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 50px 20px;
-      gap: 20px;
-      align-items: center;
-    }
+.price {
+  color: #e60000;
+  font-weight: bold;
+  margin-left: auto;
+}
 
-    #standort {
-      flex: 1;
-      min-width: 300px;
-      padding: 20px;
-    }
+/* Kontakt + Standort */
+#contact-location {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  gap: 20px;
+  align-items: center;
+}
 
-    #contact {
-      flex: 1;
-      min-width: 300px;
-      padding: 20px;
-      text-align: center;
-    }
+#standort {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
 
-    #contact p, #contact a {
-      font-size: 1.4em;
-      font-weight: bold;
-      margin-top: 20px;
-      display: inline-block;
-      text-decoration: none;
-      color: #0073e6;
-    }
+#contact {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
 
-    #contact a:hover {
-      color: #005bb5;
-      text-decoration: underline;
-    }
+#contact p, #contact a {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #0073e6;
+}
 
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      border-radius: 8px;
-    }
+#contact a:hover {
+  color: #005bb5;
+  text-decoration: underline;
+}
 
-    .back-to-top-container {
-      text-align: center;
-      margin-bottom: 50px;
-    }
+iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+}
 
-    .back-to-top {
-      font-size: 1.2em;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0073e6;
-      transition: color 0.3s ease;
-    }
+.back-to-top-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
-    .back-to-top:hover {
-      color: #005bb5;
-      text-decoration: underline;
-    }
+.back-to-top {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0073e6;
+  transition: color 0.3s ease;
+}
 
-    @media (max-width: 800px) {
-      #contact-location {
-        flex-direction: column;
-      }
-    }
-  </style>
+.back-to-top:hover {
+  color: #005bb5;
+  text-decoration: underline;
+}
+
+/* Footer Gradient */
+footer {
+  background: linear-gradient(90deg, #0073e6, #00aaff);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 800px) {
+  #contact-location {
+    flex-direction: column;
+  }
+}
+</style>
 </head>
 <body>
 
@@ -273,19 +284,12 @@
 <!-- Kontakt + Standort Section -->
 <section id="contact-location">
 
-  <!-- Standort -->
   <div id="standort">
     <h2>Standort</h2>
     <p>Besuchen Sie uns unter: Am Funkturm 62, 44309 Dortmund</p>
-    <iframe
-      src="https://www.google.com/maps?q=Am+Funkturm+62,+44309+Dortmund&output=embed"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <iframe src="https://www.google.com/maps?q=Am+Funkturm+62,+44309+Dortmund&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  <!-- Kontakt -->
   <div id="contact">
     <h2>Kontakt</h2>
     <a href="mailto:csservice858@gmail.com?subject=Anfrage%20von%20Website&body=Hallo%20CS%20Service,%0D%0A%0D%0AIch%20möchte%20mehr%20Informationen%20über%20Ihre%20Dienste%20erhalten.%0D%0A%0D%0AMit%20freundlichen%20Grüßen," target="_blank">csservice858@gmail.com</a>
@@ -293,18 +297,21 @@
 
 </section>
 
-<!-- Back to top -->
 <div class="back-to-top-container">
   <a href="#top" class="back-to-top">⬆ Zurück nach oben</a>
 </div>
 
+<footer>
+  CS Service – Professionelle PC-, PlayStation- & Web-Dienste
+</footer>
+
 <script>
-  document.querySelectorAll('.back-to-top').forEach(function(el) {
-    el.addEventListener('click', function(e){
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+document.querySelectorAll('.back-to-top').forEach(function(el) {
+  el.addEventListener('click', function(e){
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+});
 </script>
 
 </body>
