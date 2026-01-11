@@ -55,10 +55,11 @@
       font-weight: bold;
       padding: 5px 0;
       display: inline-block;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #ffcc00; /* акцент боја */
     }
 
     /* Sections */
@@ -81,6 +82,12 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       display: flex;
       align-items: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .service-item i {
@@ -89,6 +96,12 @@
       font-size: 1.3em;
       width: 30px;
       text-align: center;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .service-item:hover i {
+      color: #005bb5;
+      transform: rotate(15deg);
     }
 
     .price {
@@ -105,6 +118,7 @@
       margin: 0 auto;
       padding: 50px 20px;
       gap: 20px;
+      align-items: center;
     }
 
     #standort {
@@ -117,9 +131,13 @@
       flex: 1;
       min-width: 300px;
       padding: 20px;
-      background-color: #e6f0ff;
       text-align: center;
-      border-radius: 8px;
+    }
+
+    #contact p {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-top: 20px;
     }
 
     iframe {
@@ -129,27 +147,21 @@
       border-radius: 8px;
     }
 
-    #contact a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #0073e6;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    #contact a:hover {
-      text-decoration: underline;
+    .back-to-top-container {
+      text-align: center;
+      margin-bottom: 50px;
     }
 
     .back-to-top {
-      display: block;
-      margin-top: 30px;
+      font-size: 1.2em;
       font-weight: bold;
       text-decoration: none;
       color: #0073e6;
+      transition: color 0.3s ease;
     }
 
     .back-to-top:hover {
+      color: #005bb5;
       text-decoration: underline;
     }
 
@@ -235,7 +247,7 @@
 
 <!-- Kontakt + Standort Section -->
 <section id="contact-location">
-  
+
   <!-- Standort -->
   <div id="standort">
     <h2>Standort</h2>
@@ -247,16 +259,19 @@
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
-  
+
   <!-- Kontakt -->
   <div id="contact">
     <h2>Kontakt</h2>
-    <p>Schreiben Sie uns eine E-Mail:</p>
-    <a href="mailto:csservice858@gmail.com">csservice858@gmail.com</a>
-    <a href="#top" class="back-to-top">⬆ Zurück nach oben</a>
+    <p>csservice858@gmail.com</p>
   </div>
 
 </section>
+
+<!-- Back to top -->
+<div class="back-to-top-container">
+  <a href="#top" class="back-to-top">⬆ Zurück nach oben</a>
+</div>
 
 <!-- Back to top script -->
 <script>
