@@ -11,7 +11,10 @@
       padding: 0;
       background-color: #f0f2f5;
       color: #333;
+      scroll-behavior: smooth;
     }
+
+    /* Navbar */
     header {
       background-color: #0073e6;
       color: white;
@@ -21,23 +24,30 @@
       top: 0;
       z-index: 1000;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
+    /* Sections */
     section {
       padding: 50px 20px;
       max-width: 900px;
       margin: 0 auto;
     }
+
     h2 {
       color: #0073e6;
+      margin-bottom: 20px;
     }
+
     .service-item {
       background-color: white;
       padding: 15px;
@@ -45,6 +55,7 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
     .price {
       color: #e60000;
       font-weight: bold;
@@ -62,14 +73,16 @@
   </nav>
 </header>
 
+<!-- PC Service Section -->
 <section id="pc-service">
   <h2>PC-Service</h2>
   <p>Wir reparieren, warten und optimieren Ihren Computer.</p>
   <div class="service-item">
-    Diagnose & Fehlerbehebung – <span class="price">20€</span>
+    Software Installation – <span class="price">30€</span>
   </div>
-  <div class="service-item">
-    Hardware Austausch – <span class="price">ab 40€</span>
-  </div>
-  <div class="service-item">
-    Software Installation / Update
+</section>
+
+<!-- PlayStation Service Section -->
+<section id="ps-service">
+  <h2>PlayStation-Service</h2>
+  <p>Reparatur, Zubehör und Software-Support für Ihre PlayStation.</p>
