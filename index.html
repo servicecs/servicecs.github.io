@@ -7,38 +7,69 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
+      margin: 0;
+      padding: 0;
       background-color: #f0f2f5;
       color: #333;
     }
-    h1 {
+    header {
+      background-color: #0073e6;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
       color: #0073e6;
     }
-    p {
-      font-size: 1.2em;
-    }
-    .services {
-      margin-top: 20px;
-    }
     .service-item {
+      background-color: white;
+      padding: 15px;
       margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .price {
+      color: #e60000;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>Willkommen bei CS Service 👋</h1>
-  <p>Ihre professionelle Adresse für PC- und PlayStation-Service sowie kreatives Webdesign.</p>
 
-  <div class="services">
-    <div class="service-item">
-      <strong>PC-Service:</strong> Reparatur, Wartung und Optimierung Ihres Computers.
-    </div>
-    <div class="service-item">
-      <strong>PlayStation-Service:</strong> Reparatur, Zubehör und Software-Support.
-    </div>
-    <div class="service-item">
-      <strong>Webdesign:</strong> Erstellung moderner Webseiten für Ihr Business.
-    </div>
+<header>
+  <h1>CS Service</h1>
+  <nav>
+    <a href="#pc-service">PC-Service</a>
+    <a href="#ps-service">PlayStation-Service</a>
+    <a href="#webdesign">Webdesign</a>
+  </nav>
+</header>
+
+<section id="pc-service">
+  <h2>PC-Service</h2>
+  <p>Wir reparieren, warten und optimieren Ihren Computer.</p>
+  <div class="service-item">
+    Diagnose & Fehlerbehebung – <span class="price">20€</span>
   </div>
-</body>
-</html>
+  <div class="service-item">
+    Hardware Austausch – <span class="price">ab 40€</span>
+  </div>
+  <div class="service-item">
+    Software Installation / Update
