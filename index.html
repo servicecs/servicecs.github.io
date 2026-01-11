@@ -16,7 +16,7 @@
       scroll-behavior: smooth;
     }
 
-    /* Header mit Logo zentriert */
+    /* Header zentriert */
     header {
       background-color: #0073e6;
       color: white;
@@ -59,7 +59,7 @@
     }
 
     nav a:hover {
-      color: #ffcc00; /* акцент боја */
+      color: #ffcc00;
     }
 
     /* Sections */
@@ -74,6 +74,7 @@
       margin-bottom: 20px;
     }
 
+    /* Service items hover gradient */
     .service-item {
       background-color: white;
       padding: 15px;
@@ -82,12 +83,13 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       display: flex;
       align-items: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
     }
 
     .service-item:hover {
       transform: scale(1.03);
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      background: linear-gradient(90deg, #e6f0ff, #cce0ff);
     }
 
     .service-item i {
@@ -138,6 +140,21 @@
       font-size: 1.4em;
       font-weight: bold;
       margin-top: 20px;
+    }
+
+    #contact a {
+      display: inline-block;
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #0073e6;
+      transition: color 0.3s ease;
+    }
+
+    #contact a:hover {
+      color: #005bb5;
+      text-decoration: underline;
     }
 
     iframe {
@@ -263,7 +280,7 @@
   <!-- Kontakt -->
   <div id="contact">
     <h2>Kontakt</h2>
-    <p>csservice858@gmail.com</p>
+    <a href="mailto:csservice858@gmail.com?subject=Anfrage%20von%20Website&body=Hallo%20CS%20Service,%0D%0A%0D%0AIch%20möchte%20mehr%20Informationen%20über%20Ihre%20Dienste%20erhalten.%0D%0A%0D%0AMit%20freundlichen%20Grüßen," target="_blank">csservice858@gmail.com</a>
   </div>
 
 </section>
