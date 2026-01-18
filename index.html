@@ -41,7 +41,6 @@ nav a{
   margin:0 15px;
   text-decoration:none;
   font-weight:bold;
-  transition:.3s;
 }
 
 nav a:hover{color:#ffcc00}
@@ -56,6 +55,7 @@ section{
 #pc-service{background:#e6f0ff}
 #ps-service{background:#fff0e6}
 #webdesign{background:#e6ffe6}
+#impressum{background:#ffffff}
 
 h2{color:#0073e6}
 
@@ -67,12 +67,6 @@ h2{color:#0073e6}
   display:flex;
   align-items:center;
   box-shadow:0 2px 5px rgba(0,0,0,.1);
-  transition:.3s;
-}
-
-.service-item:hover{
-  transform:scale(1.03);
-  box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
 .price{
@@ -81,17 +75,13 @@ h2{color:#0073e6}
   color:#e60000;
 }
 
-/* Hinweis Box */
 .hinweis{
   background:#fffbea;
   border-left:6px solid #ffcc00;
   padding:20px;
   border-radius:10px;
   margin-top:25px;
-  box-shadow:0 2px 5px rgba(0,0,0,.1);
 }
-
-.hinweis ul{margin-top:10px}
 
 #contact-location{
   max-width:900px;
@@ -123,131 +113,6 @@ iframe{
   border-radius:10px;
 }
 
-.back-top{text-align:center;margin:40px 0}
-
 footer{
   background:linear-gradient(90deg,#0073e6,#00aaff);
-  color:#fff;
-  text-align:center;
-  padding:20px;
-  font-weight:bold;
-}
-</style>
-</head>
-
-<body>
-
-<header id="top">
-  <div class="logo-title">
-    <img src="logo.jpg" alt="CS Service Logo">
-    <h1>CS Service</h1>
-  </div>
-  <nav>
-    <a href="#pc-service">PC-Service</a>
-    <a href="#ps-service">Sony PlayStation</a>
-    <a href="#webdesign">Web Design</a>
-    <a href="#contact-location">Kontakt / Standort</a>
-  </nav>
-</header>
-
-<!-- PC SERVICE -->
-<section id="pc-service">
-<h2>PC-Service</h2>
-
-<div class="service-item">
-🖥️ Diagnose & Fehlerbehebung <span class="price">20€</span>
-</div>
-
-<div class="service-item">
-🖥️ Hardware Austausch <span class="price">30€</span>
-</div>
-
-<div class="service-item">
-🖥️ Software Installation <span class="price">40€</span>
-</div>
-
-<div class="hinweis">
-<strong>Wichtiger Hinweis zum PC-Service:</strong><br>
-Wir führen <b>keine Lötarbeiten</b> durch (z. B. Mainboard-Reparaturen, Grafikchip, Ladebuchse).
-<br><br>
-Unser PC-Service umfasst ausschließlich <b>grundlegende Wartungs- und Servicearbeiten</b> wie:
-<ul>
-  <li>Reinigung von PC & Laptop</li>
-  <li>Erneuerung der Wärmeleitpaste</li>
-  <li>Software-Installation & Systemoptimierung</li>
-</ul>
-</div>
-</section>
-
-<!-- PLAYSTATION -->
-<section id="ps-service">
-<h2>Sony PlayStation</h2>
-
-<div class="service-item">
-🎮 Software Installation <span class="price">20€</span>
-</div>
-
-<div class="service-item">
-🎮 Reparatur / Service PS3 & PS4 <span class="price">40€</span>
-</div>
-
-<div class="service-item">
-🎮 Reparatur / Service PlayStation 5 <span class="price">80€</span>
-</div>
-
-<div class="hinweis">
-<strong>Wichtiger Hinweis zum PlayStation-Service:</strong><br>
-Wir führen <b>keine Lötarbeiten</b> durch (z. B. HDMI-Port, Chips oder Mainboard-Reparaturen).
-<br><br>
-Unser Service umfasst ausschließlich <b>grundlegende Wartungsarbeiten</b> wie:
-<ul>
-  <li>Innen- und Außenreinigung</li>
-  <li>Erneuerung der Wärmeleitpaste</li>
-  <li>Flüssigmetall-Anwendung (falls geeignet)</li>
-</ul>
-</div>
-</section>
-
-<!-- WEB DESIGN -->
-<section id="webdesign">
-<h2>Web Design</h2>
-
-<div class="service-item">
-🌐 Statische Web-Seite <span class="price">150€</span>
-</div>
-
-<div class="service-item">
-🌐 Wartung monatlich <span class="price">100€</span>
-</div>
-
-<div class="service-item">
-🌐 Wartung jährlich <span class="price">800€</span>
-</div>
-</section>
-
-<!-- KONTAKT & STANDORT -->
-<section id="contact-location">
-<div id="standort">
-<h2>Standort</h2>
-<p>Am Funkturm 62, 44309 Dortmund</p>
-<iframe src="https://www.google.com/maps?q=Am+Funkturm+62,+44309+Dortmund&output=embed"></iframe>
-</div>
-
-<div id="contact">
-<h2>Kontakt</h2>
-<a href="mailto:csservice858@gmail.com?subject=Anfrage%20von%20Website">
-csservice858@gmail.com
-</a>
-</div>
-</section>
-
-<div class="back-top">
-<a href="#top">⬆ Zurück nach oben</a>
-</div>
-
-<footer>
-CS Service – PC · PlayStation · Web Design
-</footer>
-
-</body>
-</html>
+  color:#ff
