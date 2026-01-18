@@ -44,10 +44,7 @@ nav a{
   transition:.3s;
 }
 
-nav a:hover{
-  color:#ffcc00;
-  transform:scale(1.05);
-}
+nav a:hover{color:#ffcc00}
 
 section{
   max-width:900px;
@@ -56,9 +53,9 @@ section{
   border-radius:10px;
 }
 
-#pc-service{background:linear-gradient(135deg,#e6f0ff,#cce0ff)}
-#ps-service{background:linear-gradient(135deg,#fff0e6,#ffd9cc)}
-#webdesign{background:linear-gradient(135deg,#e6ffe6,#ccffcc)}
+#pc-service{background:#e6f0ff}
+#ps-service{background:#fff0e6}
+#webdesign{background:#e6ffe6}
 
 h2{color:#0073e6}
 
@@ -91,6 +88,18 @@ h2{color:#0073e6}
   color:#e60000;
 }
 
+/* Hinweis Box */
+.hinweis{
+  background:#fffbea;
+  border-left:6px solid #ffcc00;
+  padding:20px;
+  border-radius:10px;
+  margin-top:20px;
+  box-shadow:0 2px 5px rgba(0,0,0,.1);
+}
+
+.hinweis ul{margin-top:10px}
+
 #contact-location{
   max-width:900px;
   margin:auto;
@@ -108,7 +117,7 @@ h2{color:#0073e6}
 #contact{text-align:center}
 
 #contact a{
-  font-size:1.5em;
+  font-size:1.6em;
   font-weight:bold;
   color:#0073e6;
   text-decoration:none;
@@ -121,10 +130,7 @@ iframe{
   border-radius:10px;
 }
 
-.back-top{
-  text-align:center;
-  margin:40px 0;
-}
+.back-top{text-align:center;margin:40px 0}
 
 footer{
   background:linear-gradient(90deg,#0073e6,#00aaff);
@@ -154,20 +160,19 @@ footer{
 <!-- PC SERVICE -->
 <section id="pc-service">
 <h2>PC-Service</h2>
-<p>Wir reparieren und optimieren Ihren Computer.</p>
 
 <div class="service-item">
-<svg viewBox="0 0 24 24"><path d="M4 5h16v12H4z"/><path d="M2 17h20v2H2z"/></svg>
+<svg viewBox="0 0 24 24"><path d="M4 5h16v12H4z"/></svg>
 Diagnose & Fehlerbehebung <span class="price">20€</span>
 </div>
 
 <div class="service-item">
-<svg viewBox="0 0 24 24"><path d="M4 5h16v12H4z"/><path d="M2 17h20v2H2z"/></svg>
+<svg viewBox="0 0 24 24"><path d="M4 5h16v12H4z"/></svg>
 Hardware Austausch <span class="price">30€</span>
 </div>
 
 <div class="service-item">
-<svg viewBox="0 0 24 24"><path d="M4 5h16v12H4z"/><path d="M2 17h20v2H2z"/></svg>
+<svg viewBox="0 0 24 24"><path d="M4 5h16v12H4z"/></svg>
 Software Installation <span class="price">40€</span>
 </div>
 </section>
@@ -175,42 +180,47 @@ Software Installation <span class="price">40€</span>
 <!-- PLAYSTATION -->
 <section id="ps-service">
 <h2>Sony PlayStation</h2>
-<p>Service und Reparaturen für PlayStation Konsolen.</p>
 
 <div class="service-item">
-<svg viewBox="0 0 64 64"><path d="M12 32c0-8 8-16 20-16s20 8 20 16-8 16-20 16-20-8-20-16z"/></svg>
-Software Installation <span class="price">20€</span>
+🎮 Software Installation <span class="price">20€</span>
 </div>
 
 <div class="service-item">
-<svg viewBox="0 0 64 64"><path d="M12 32c0-8 8-16 20-16s20 8 20 16-8 16-20 16-20-8-20-16z"/></svg>
-Reparatur / Service PS3 & PS4 <span class="price">40€</span>
+🎮 Reparatur / Service PS3 & PS4 <span class="price">40€</span>
 </div>
 
 <div class="service-item">
-<svg viewBox="0 0 64 64"><path d="M12 32c0-8 8-16 20-16s20 8 20 16-8 16-20 16-20-8-20-16z"/></svg>
-Reparatur / Service PlayStation 5 <span class="price">80€</span>
+🎮 Reparatur / Service PlayStation 5 <span class="price">80€</span>
+</div>
+
+<!-- HINWEIS -->
+<div class="hinweis">
+<strong>Wichtiger Hinweis zum Service:</strong><br>
+Wir führen <b>keine Lötarbeiten</b> durch (z. B. HDMI-Port, Chips oder Mainboard-Reparaturen).
+<br><br>
+Unser Service umfasst ausschließlich <b>grundlegende Wartungsarbeiten</b> wie:
+<ul>
+  <li>Innen- und Außenreinigung</li>
+  <li>Erneuerung der Wärmeleitpaste</li>
+  <li>Flüssigmetall-Anwendung (falls geeignet)</li>
+</ul>
 </div>
 </section>
 
 <!-- WEB DESIGN -->
 <section id="webdesign">
 <h2>Web Design</h2>
-<p>Professionelle Webseiten für Ihr Business.</p>
 
 <div class="service-item">
-<svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16"/></svg>
-Statische Web-Seite <span class="price">150€</span>
+🌐 Statische Web-Seite <span class="price">150€</span>
 </div>
 
 <div class="service-item">
-<svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16"/></svg>
-Wartung monatlich <span class="price">100€</span>
+🌐 Wartung monatlich <span class="price">100€</span>
 </div>
 
 <div class="service-item">
-<svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16"/></svg>
-Wartung jährlich <span class="price">800€</span>
+🌐 Wartung jährlich <span class="price">800€</span>
 </div>
 </section>
 
