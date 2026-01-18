@@ -6,12 +6,15 @@
 <title>CS Service</title>
 
 <style>
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   font-family: Arial, sans-serif;
   margin:0;
   background:#f0f2f5;
   color:#333;
-  scroll-behavior:smooth;
 }
 
 header{
@@ -22,7 +25,6 @@ header{
   position:sticky;
   top:0;
   z-index:1000;
-  box-shadow:0 2px 15px rgba(0,0,0,.3);
 }
 
 .logo-title{
@@ -34,7 +36,9 @@ header{
 
 .logo-title img{height:60px}
 
-nav{margin-top:15px}
+nav{
+  margin-top:15px;
+}
 
 nav a{
   color:#fff;
@@ -97,7 +101,9 @@ h2{color:#0073e6}
   min-width:300px;
 }
 
-#contact{text-align:center}
+#contact{
+  text-align:center;
+}
 
 #contact a{
   font-size:1.7em;
@@ -113,6 +119,111 @@ iframe{
   border-radius:10px;
 }
 
+.back-top{
+  text-align:center;
+  margin:50px 0;
+}
+
+.back-top a{
+  font-weight:bold;
+  text-decoration:none;
+  color:#0073e6;
+}
+
 footer{
   background:linear-gradient(90deg,#0073e6,#00aaff);
-  color:#ff
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🔝 TOP ANCHOR (ВАЖНО) -->
+<div id="top"></div>
+
+<header>
+  <div class="logo-title">
+    <img src="logo.jpg" alt="CS Service Logo">
+    <h1>CS Service</h1>
+  </div>
+  <nav>
+    <a href="#pc-service">PC-Service</a>
+    <a href="#ps-service">Sony PlayStation</a>
+    <a href="#webdesign">Web Design</a>
+    <a href="#contact-location">Kontakt</a>
+    <a href="#impressum">Impressum</a>
+  </nav>
+</header>
+
+<section id="pc-service">
+<h2>PC-Service</h2>
+<div class="service-item">🖥️ Diagnose & Fehlerbehebung <span class="price">20€</span></div>
+<div class="service-item">🖥️ Hardware Austausch <span class="price">30€</span></div>
+<div class="service-item">🖥️ Software Installation <span class="price">40€</span></div>
+
+<div class="hinweis">
+<strong>Wichtiger Hinweis:</strong><br>
+Keine Lötarbeiten. Nur Reinigung, Wärmeleitpaste & Software-Service.
+</div>
+</section>
+
+<section id="ps-service">
+<h2>Sony PlayStation</h2>
+<div class="service-item">🎮 Software Installation <span class="price">20€</span></div>
+<div class="service-item">🎮 Reparatur / Service PS3 & PS4 <span class="price">40€</span></div>
+<div class="service-item">🎮 Reparatur / Service PlayStation 5 <span class="price">80€</span></div>
+
+<div class="hinweis">
+<strong>Wichtiger Hinweis:</strong><br>
+Keine HDMI- oder Lötarbeiten. Nur Reinigung, Wärmeleitpaste & Flüssigmetall.
+</div>
+</section>
+
+<section id="webdesign">
+<h2>Web Design</h2>
+<div class="service-item">🌐 Statische Website <span class="price">150€</span></div>
+<div class="service-item">🌐 Wartung monatlich <span class="price">100€</span></div>
+<div class="service-item">🌐 Wartung jährlich <span class="price">800€</span></div>
+</section>
+
+<section id="contact-location">
+<div id="standort">
+<h2>Standort</h2>
+<p>Am Funkturm 62, 44309 Dortmund</p>
+<iframe src="https://www.google.com/maps?q=Am+Funkturm+62,+44309+Dortmund&output=embed"></iframe>
+</div>
+
+<div id="contact">
+<h2>Kontakt</h2>
+<a href="mailto:csservice858@gmail.com">csservice858@gmail.com</a>
+</div>
+</section>
+
+<!-- 🔝 BACK TO TOP -->
+<div class="back-top">
+<a href="#top">⬆ Zurück nach oben</a>
+</div>
+
+<section id="impressum">
+<h2>Impressum</h2>
+<p>
+CS Service<br>
+Am Funkturm 62<br>
+44309 Dortmund<br>
+Deutschland
+</p>
+<p>
+E-Mail: <a href="mailto:csservice858@gmail.com">csservice858@gmail.com</a>
+</p>
+</section>
+
+<footer>
+CS Service – PC · PlayStation · Web Design
+</footer>
+
+</body>
+</html>
